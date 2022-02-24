@@ -1,0 +1,110 @@
+@import './fonts.scss';
+@import './colors.scss';
+
+@mixin container {
+    max-width: 1464px;
+    padding: 0 10px;
+    width: 100%;
+    margin: 260px auto;
+    @media (max-width: 1024px) {
+        margin: 110px auto;
+    }
+    // @media (max-width: 640px) {
+    //     margin: 260px auto;
+    // }
+}
+@mixin h1 {
+    font-size: 41px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 700;
+    line-height: 151%;
+    color: $gray;
+    @media (max-width: 1024px) {
+        font-size: 35px;
+    }
+    @media (max-width: 640px) {
+        font-size: 27px;
+    }
+}
+
+@mixin h2 {
+    font-size: 50px;
+    line-height: 138%;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    color: $gray;
+    @media (max-width: 1024px) {
+        font-size: 35px;
+    }
+    @media (max-width: 640px) {
+        font-size: 30px;
+    }
+}
+
+@mixin h3 {
+    font-size: 25px;
+    line-height: 133%;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    color: $gray;
+    @media (max-width: 1024px) {
+        font-size: 23px;
+    }
+    @media (max-width: 640px) {
+        font-size: 18px;
+    }
+}
+
+@mixin h4 {
+    font-size: 20px;
+    line-height: 144%;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+}
+
+@mixin button {
+    font-family: 'Helvetica', sans-serif;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    text-transform: uppercase;
+    color: $white;
+    justify-content: center;
+    background: linear-gradient($accent-gradient);
+    letter-spacing: 0.095em;
+    cursor: pointer;
+    box-shadow: inset 0px -4px 0px #E23732;
+    @media (max-width: 1024px) {
+        font-size: 12px;
+    }
+    @media (max-width: 640px) {
+        padding: 24px 45px;
+    }
+    @media (max-width: 380px) {
+        padding: 24px 10px !important;
+        width: 100%;
+    }
+}
+
+@mixin blue-button {
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 0.095em;
+    background: linear-gradient($blue-gradient);
+    box-shadow: inset 0px -4px 0px #004D76;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    max-width: 310px;
+    width: 100%;
+    padding: 30px 10px;
+    color: $white;
+}
+
+@mixin text {
+    font-size: 18px;
+}
